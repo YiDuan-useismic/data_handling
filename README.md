@@ -15,3 +15,5 @@ This script is to generate images for ML processing. Using obspy trace merger to
 # Cautions
 
 ** The images created before merging the duplicated channels together should not make a difference to the ML seismicity results. In fact, it is highly unlikely that the leftover segment would contain events. This is currently a work-around and a temporary solution. However, if the original miniseed processing logic is corrected, then such work-around is no longer needed. **
+
+** The timestamps of each data point from each channel are indeed aligned so using old logic (without extra merging of the duplicated channels) will not have flow-on effects on seismic event location. **
